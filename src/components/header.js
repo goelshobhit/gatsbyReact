@@ -1,34 +1,57 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import "./header.css"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+const Header = () => (
+  <div className="fixedheader">
+    <header className="" id="myHeader">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-3 col-xs-4">
+            <div className="logo animation">
+              <Link to="https://emoha.com/">
+                <StaticImage
+                  src={"../images/emohalogo_latest-red.webp"}
+                  width={153}
+                  quality={90}
+                  formats={["WEBP"]}
+                  alt="Emoha Elders Car"
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="col-sm-9 col-xs-8">
+            <div className="headerright">
+              <ul>
+                <li className="contact_number">
+                  <Link
+                    to="tel:+18888660486"
+                    // onlick="gtag('event', 'click', {'event_category':'Call Button','event_label':'Call'})"
+                  >
+                    <span>
+                      <i className="fa fa-phone"></i>{" "}
+                    </span>
+                    +1 888-866-0486
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="javascript:void(0);"
+                    className="signbtn"
+                    id="signup_btn_2"
+                  >
+                    Sign up
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
 )
 
 Header.propTypes = {
