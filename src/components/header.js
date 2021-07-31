@@ -38,7 +38,7 @@ const Header = () => (
                 </li>
                 <li>
                   <Link
-                    to="javascript:void(0);"
+                    to="#;"
                     className="signbtn"
                     id="signup_btn_2"
                   >

@@ -1,0 +1,31 @@
+.elder_care {
+  background-size: cover;
+  padding: 200px 0;
+}
+.elder_care_txt {
+  width: 80%;
+  margin: 35px 0 0;
+}
+.elder_care_txt h2 {
+  color: #fff;
+  margin: 0 0 30px;
+}
+.elder_care_txt h2 span {
+  font-weight: 700;
+}
+.elder_care_txt p {
+  color: #fff;
+  font-size: 16px;
+}
+.elder_care_txt p span {
+  font-weight: 700;
+  font-size: 18px;
+}
+.elder_care_txt a {
+  margin: 30px 0 0;
+  background: #dd3940;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  padding: 20px 30px;
+}

@@ -1,0 +1,58 @@
+.emoha_impact {
+  padding: 50px 0;
+}
+.emoha_impact_header {
+  text-align: center;
+  margin: 0 0 50px;
+}
+.emoha_impact_header h2 {
+  font-size: 36px;
+  color: #333;
+}
+.emoha_impact_header h2 span {
+  color: #dd3940;
+  font-weight: 700;
+}
+.emoha_impact_header p {
+  font-size: 18px;
+  color: #333;
+  margin: 25px 0 0;
+}
+.emoha_impact_header p span {
+  font-weight: 700;
+}
+.e_impact_box {
+  text-align: center;
+  padding: 40px 0;
+}
+.bor-bottom {
+  border-bottom: 1px solid rgba(221, 57, 64, 0.1);
+}
+.bor-both {
+  border-left: 1px solid rgba(221, 57, 64, 0.1);
+  border-right: 1px solid rgba(221, 57, 64, 0.1);
+}
+.e_icon_bg {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+}
+.e_icon_bg:before {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: rgba(221, 57, 64, 0.1);
+  border-radius: 100%;
+}
+.e_icon_txt {
+  margin: 0px 0 0;
+}
+.e_icon_txt h3 {
+  margin: 30px 0 15px;
+  color: #dd3940;
+  font-size: 18px;
+  font-weight: 700;
+}

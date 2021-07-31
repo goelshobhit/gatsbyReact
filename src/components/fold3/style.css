@@ -1,0 +1,37 @@
+.fold_3 {
+  background: #fff6f7;
+  display: flex;
+  margin: 100px 0 0;
+  position: relative;
+}
+.fold_3_left {
+  width: 50%;
+}
+.fold_3_left video {
+  width: 100%;
+  height: auto;
+}
+.fold_3_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+}
+.fold_3_text h2 {
+  color: #dd3940;
+  font-weight: 700;
+}
+.fold_3_text p {
+}
+.fold_3_text a {
+  margin: 15px 0 0;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  background: #363c4c;
+  padding: 10px 30px;
+}

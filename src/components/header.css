@@ -1,0 +1,98 @@
+.box::after {
+  clear: both;
+}
+.box::after,
+.box::before {
+  display: table;
+  content: " ";
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.fixedheader {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  position: relative;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+header {
+  padding: 15px 0;
+  top: 0;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: relative;
+  position: fixed;
+}
+.fixedheader + .contentbox {
+  padding-top: 0px;
+}
+header .logo {
+  text-align: left;
+  position: relative;
+  transition: 0.5s;
+  margin: 0;
+}
+header .logo img {
+  text-align: left;
+  display: inline-block;
+  max-height: 90px;
+}
+header .logo h1 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 24px;
+}
+header .headerright {
+  float: right;
+  margin: 30px 0 0;
+}
+header .headerright ul {
+  display: flex;
+}
+header .headerright li {
+  margin-left: 15px;
+}
+header .headerright li a {
+  color: #dd3940;
+  font-size: 20px;
+  font-family: "Samsung_Bold";
+  text-decoration: none;
+}
+.headerright li a.signbtn {
+  color: #fff;
+  margin-top: -05px;
+  font-family: "Samsung_Bold";
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  0% {
+    background-color: #dd3940;
+  }
+  50% {
+    background-color: #fdcb2f;
+  }
+  100% {
+    background-color: #dd3940;
+  }
+}
